@@ -1,38 +1,58 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="imagens/criptografia-bitcoin.png"
+      type="image/x-icon"
+    />
     <title>Decodificador</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <header>
-        <img src="./imagens/logoAlura.png" alt="Logo da Alura">
+      <img src="./imagens/criptografia-bitcoin.png" alt="Descriptografia" />
     </header>
-    
+
     <main>
-        <section>
-            <textarea class="text-area"  cols="41" rows="4" placeholder="Digite seu texto"></textarea>
-    
-            <div>
-                <h6 class="informacao">Apenas letras minúsculas e sem acento.</h6>
-            </div>
-            <div class="botoes">
-                <button class="btn-encriptar" onclick="btnEncriptar()">Criptografar</button>
-                <button class="btn-desencriptar" onclick="btnDesencriptar()">Descriptografar</button>
-            </div>
-        </section>
-        
-        <section>
-            <textarea class="mensagem"  cols="20" rows="10"></textarea>
-            <button class="btn-copiar">Copiar</button>
-        </section>
+      <section>
+        <textarea
+          class="text-area"
+          cols="41"
+          rows="4"
+          placeholder="Digite seu texto"
+        ></textarea>
+
+        <div>
+          <h6 class="informacao">Apenas letras minúsculas e sem acento.</h6>
+        </div>
+        <div class="botoes">
+          <button class="btn-encriptar" onclick="btnEncriptar()">
+            Criptografar
+          </button>
+          <button class="btn-desencriptar" onclick="btnDesencriptar()">
+            Descriptografar
+          </button>
+        </div>
+      </section>
+
+      <section>
+        <textarea
+          class="mensagem"
+          cols="20"
+          rows="10"
+          type="text"
+          value="Texto para copiar"
+          id="textoParaCopiar"
+        ></textarea>
+        <button class="btn-copiar" onclick="copiarTexto()">Copiar</button>
+      </section>
     </main>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
